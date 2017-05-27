@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Background Images</title>
+		
+		<style type="text/css">
+			#large {
+				width: 500px;
+				height: 500px;
+			}
+	
+			#medium {
+				width: 250px;
+				height: 250px;	
+			}
+	
+			#small {
+				width: 100px;
+				height: 100px;
+			}
+
+			#top {
+				vertical-align: top;
+			}
+
+			#middle {
+				vertical-align: middle;
+			}
+
+			#bottom {
+				vertical-align: bottom;
+			}
+
+			#left {
+				float: left;
+			}
+
+			#right	{
+				float: right;
+			}
+	
+			#center {
+				display: block;
+				margin: auto;
+			}
+
+			#img-element {	
+				background-image: url("images/pattern.gif");
+				color: white;
+				padding: 20px;
+			}
+
+			body {
+				background-image: url("images/tulip.gif");
+				background-repeat: no-repeat;
+				background-position: right;
+				background-attachment: fixed;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>CSS Image Tutorial</h1>
+
+		<h2>Example #1: Image Sizes</h2>
+
+		<img src="images/magnolia-large.jpg" id="large" 
+			alt="Magnolia" />
+		<img src="images/magnolia-medium.jpg" id="medium" 
+			alt="Magnolia" />
+		<img src="images/magnolia-small.jpg" id="small" 
+			alt="Magnolia" />
+
+		<p>You can control the size of an image using the width
+ 			and height properties in CSS, just like you 
+			can for any box. You specify image sizes because 
+			it helps pages to load smoothly because the HTML
+			and CSS code will often load before the images, 
+			the height and width properties tell the browser
+			how much space to leave for an image while the
+			rest of the page loads.
+		</p>
+		
+		<h2>Example #2: Aligning Images</h2>
+
+		<p><img src="images/magnolia-medium.jpg" id="top" 
+			alt="Magnolia" />The <b>vertical-align</b> attribute
+			refers to how to align text with the image.</p>
+		<p><img src="images/magnolia-medium.jpg" id="middle" 
+			alt="Magnolia" />Valid values for the 
+			<b>vertical-align</b> attribute are "top", "middle",
+			and "bottom".</p>
+		<p><img src="images/magnolia-medium.jpg" id="bottom" 
+			alt="Magnolia" />The values: "top", "middle",
+			and "bottom" refer to what part of the image to 
+			align the first line of text with.</p>
+
+		<img src="images/magnolia-medium.jpg" id="left" 
+			alt="Magnolia" />
+		<img src="images/magnolia-medium.jpg" id="right" 
+			alt="Magnolia" />
+		<img src="images/magnolia-medium.jpg" id="center" 
+			alt="Magnolia" />
+
+		<p>For the image to align left or right use the CSS 
+			property float. For the image to align to the 
+			center, we need to use the display and margin 
+			properties.
+ 		</p>
+		
+		<h2>Example #3: Background Images</h2>
+	
+		<p id="img-element"><b><i>Magnolia grandiflora</i></b>, commonly known as
+			the <b>Southern magnolia</b> or <b>bull bay</b>, 
+			is a tree of the family Magnoliaceae native to the
+			southeastern United States, from coastal Virginia 
+			south to central Florida, and west to eastern
+			Texas and Oklahoma. Reaching 27.5 m (90 ft) in 
+			height, it is a large striking evergreen tree with
+			large dark green leaves and large white fragrant
+			flowers. Widely cultivated around the world, over 
+			a hundred cultivars have been bred and marketed 
+			commercially. The timber is hard and heavy, and 
+			has been used commercially to make furniture, 
+			pallets, and veneer.</p>
+		
+	</body>
+</html>
